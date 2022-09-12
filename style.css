@@ -11,7 +11,7 @@
   --color-gray: #98a4b3;
 
   --border-radius: 2rem;
-  --border-card-radius: 1rem;
+  --card-border-radius: 1rem;
   --btn-padding: 0.5rem 2rem;
   --search-padding: 0.5rem 1rem;
   --card-padding: 1rem;
@@ -110,4 +110,73 @@ nav .create {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+/* ==========MAIN=========== */
+main {
+  position: relative;
+  top: 5.5rem;
+}
+main .container {
+  display: grid;
+  grid-template-columns: 20vw auto 20vw;
+  gap: 2rem;
+  position: relative;
+}
+/* ==========LEFT=========== */
+main .container .left {
+  height: max-content;
+  position: sticky;
+  top: var(--sticky-top-left);
+}
+main .container .left .profile {
+  padding: var(--card-padding);
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.left .sidebar {
+  margin-top: 1rem;
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+}
+.left .sidebar .menu-item {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+.left .sidebar .menu-item:hover {
+  background-color: var(--color-light);
+}
+.left .sidebar i {
+  font-size: 1.4rem;
+  color: var(--color-gray);
+  margin-left: 1rem;
+  position: relative;
+}
+.left .sidebar i .notification-count {
+  position: absolute;
+  top: -0.3rem;
+  left: 0.8rem;
+  width: fit-content;
+  background-color: var(--color-danger);
+  color: var(--color-light);
+  font-size: 0.5rem;
+  border-radius: 0.6rem;
+  padding: 0.1rem 0.3rem;
+}
+.sidebar .menu-item h3 {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.left .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
 }
