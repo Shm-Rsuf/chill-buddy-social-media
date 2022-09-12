@@ -180,3 +180,98 @@ main .container .left .profile {
   text-align: center;
   padding: 0.5rem 0;
 }
+/* ==========MIDDLE=========== */
+.middle .stories {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  height: 12rem;
+}
+.middle .stories .story {
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 0.7rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.middle .stories .story::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+.middle .stories .story .name {
+  z-index: 2;
+}
+.middle .stories .story:nth-child(1) {
+  background-image: url(./images/story-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.middle .stories .story:nth-child(2) {
+  background-image: url(./images/story-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.middle .stories .story:nth-child(3) {
+  background-image: url(./images/story-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.middle .stories .story:nth-child(4) {
+  background-image: url(./images/story-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.middle .stories .story:nth-child(5) {
+  background-image: url(./images/story-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.middle .stories .story:nth-child(6) {
+  background-image: url(./images/story-6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.middle .stories .story .profile-photo {
+  width: 2rem;
+  aspect-ratio: 2rem;
+  align-self: flex-start;
+  border: 3px solid var(--color-primary);
+}
+
+/* ==========CREATE POST=========== */
+.middle .create-post {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: var(--color-white);
+  padding: 0.4rem 1rem;
+  border-radius: var(--border-radius);
+}
+.middle .create-post input[type="text"] {
+  font-family: inherit;
+  justify-items: flex-start;
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  color: var(--color-dark);
+  margin-right: 1rem;
+}
